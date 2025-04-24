@@ -1,0 +1,234 @@
+/*Paleta de cores:
+color1:#014BAB;
+color2:#51ADE5;
+color3:#E5CF5F;
+color4:#1A5E8A;
+color5:rgb(150, 176, 194);
+*/
+
+*{
+    margin:0;
+    padding:0;
+}
+
+* p{
+    line-height: 30px;
+}
+
+* p, label, strong, input, a{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* h1{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.btn1{
+    color:white;
+    background-color:#4981a7;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
+    height:40px;
+    width:180px;
+    padding: 3px;
+    font-size: 17px;
+    border:1px solid rgba(0, 0, 0, 0.24);
+    transition:0.3s;
+}
+
+.btn1:hover{
+    height:50px;
+    width:190px;
+    text-decoration: underline;
+}
+
+.btn1:active{
+    background-color:#2e5e7e;
+}
+
+.btn2{
+    color:white;
+    background-color:#3a80af;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
+    height:30px;
+    width:130px;
+    padding: 3px;
+    font-size: 17px;
+    border:1px solid rgba(0, 0, 0, 0.24);
+    transition:0.3s;
+}
+
+.btn2:hover{
+    height:35px;
+    width:135px;
+    text-decoration: underline;
+}
+
+.btn2:active{
+    background-color:#477899;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-image: linear-gradient(90deg,#9ac5e0,#89bddd,#78a8c5);
+    background-repeat: no-repeat;
+    width:100%;
+    height:100%;
+}
+
+nav#barra-superior{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:80px;
+    padding:10px;
+    background-image: linear-gradient(90deg,#1A5E8A, #104d9c,#014BAB);
+    width:100%;
+    position: fixed; /* Torna o elemento fixo na tela */
+    top: 0; /* Alinha o elemento ao topo da viewport */
+    left: 0; /* Alinha o elemento à esquerda da viewport */
+    z-index: 2;
+    box-shadow:10px 10px 20px rgba(0, 0, 0, 0.39);
+}
+
+nav#barra-superior div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+nav#barra-superior div h1{
+    color:white;
+} 
+
+/*nav#barra-superior div picture{
+    margin-right: 20px;
+}*/
+
+nav#barra-superior div picture img{
+    width:40px;
+}
+
+#barra-superior ul{
+    display:inline-flex;
+    list-style-type: none;
+}
+
+#barra-superior ul li{
+    margin-right: 15px;
+}
+
+#barra-superior ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color:white;
+    transition:0.3s;
+}
+
+#barra-superior ul li a:hover{
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+header{
+    height: 320px;
+    width:100%;
+    background-color: #014BAB;
+    background-image:url('/src/images/background/banner-teste-img-pag.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    backdrop-filter:blur(40px);
+    box-shadow:10px 10px 20px rgba(0, 0, 0, 0.39);
+    margin-top: 50px;
+}
+
+main{
+    padding:15px;
+    min-width:500px;
+    max-width:1100px;
+    background-color: whitesmoke;
+    box-shadow:10px 10px 20px rgba(0, 0, 0, 0.274);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main aside #escolherSexo{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom:20px;
+}
+
+main aside #escolherSexo h1{
+    margin-bottom:5px;
+    text-align: center;
+}
+
+main aside #escolherSexo input{
+    margin-right:10px;
+}
+
+main aside #InfosIMC{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+}
+
+main aside #InfosIMC input{
+    margin-bottom: 15px;
+    border-radius:10px;
+    border:1px solid rgba(0, 0, 0, 0.336);
+    padding:5px;
+}
+
+main aside #InfosIMC button{
+    color:white;
+    background-color:#4981a7;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
+    height:30px;
+    width:80px;
+    padding: 3px;
+    font-size: 16px;
+    border:1px solid rgba(0, 0, 0, 0.24);
+    transition:0.3s;
+}
+
+main aside #InfosIMC button:hover{
+    height:35px;
+    width:85px;
+    text-decoration: underline;
+}
+
+#container-diagnostico{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    margin-top:30px;
+}
+
+#local-img{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+footer{
+    margin-top: 30px;
+    width:100%;
+    padding:10px;
+    text-align: center;
+    color:white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.164);
+    background-image: linear-gradient(90deg,#1A5E8A, #104d9c,#014BAB);
+}

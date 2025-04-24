@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Teste de IMC</title>
+    <link rel="stylesheet" href="/src/styles/pag-teste.css">
+    <link rel="shortcut icon" href="/src/images/favicon/flavicon-your-health.png" type="image/x-icon">
 </head>
 <body>
-    
+    <nav id="barra-superior">
+        <div>
+            <h1>Your <picture><img src="/src/images/icons/logo-site.png" alt="logo do site"></picture>Health</h1>
+        </div>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#">Teste de IMC</a></li>
+            <li><a href="./about-us.html">About Us</a></li>
+        </ul>
+    </nav>
+    <header>
+        
+    </header>
+    <main>
+        <aside>
+            <div id="escolherSexo">
+                <h1>Insira seu sexo:</h1>
+                <label for="">Masculino</label>
+                <input type="radio" name="escolha" checked id="masCampo">
+                <label for="">Feminino</label>
+                <input type="radio" name="escolha" id="femCampo">
+            </div>
+            <div id="InfosIMC">
+                <label for="">Insira sua altura(Em cm):</label>
+                <input placeholder="Digite sua altura..." type="number" name="txtaltura" id="alturaCampo">
+
+                <label for="">Insira seu peso(Em kg):</label>
+                <input placeholder="Digite seu peso..." type="number" name="txtpeso" id="pesoCampo">
+                <button id="calcularIMC">Confirmar</button>
+            </div>
+            <div id="container-diagnostico">
+                <p id="tipo">Esperando diagnóstico...</p>
+                <div id="local-img">
+
+                </div>
+                <div id="local-prevencao">
+
+                </div>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy;Direitos autorais reservados</p>
+    </footer>
+
+    <script type="module" src="/src/scripts/teste-imc.js"></script>
 </body>
 </html>
