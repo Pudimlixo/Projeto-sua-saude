@@ -21,6 +21,8 @@ function diagnosticoIMC(){
     imgCaso.setAttribute('id','imgResult')
     imgCaso.style.borderRadius = '10px'
     imgCaso.style.width = '300px'
+    imgCaso.style.marginTop = '30px'
+    imgCaso.style.marginBottom = '30px'
 
     let prevencao = document.createElement('p')
     prevencao.setAttribute('id','prevencaoCaso')
@@ -33,7 +35,7 @@ function diagnosticoIMC(){
     //Tratamento de erro se os campos estiverem vazios
 
     if(campoAltura.value.length == 0 || campoPeso.value.length == 0){
-        window.alert(`[ERRO]Um ou dois campos incorretos`)
+        window.alert(`[ERRO]Um ou dois campos vazios`)
     } else {
         if(imc < 18.5){
             caso = `Abaixo do peso normal`
@@ -54,14 +56,14 @@ function diagnosticoIMC(){
 
         if(resultadoDiagnostico){
             imgCaso.src = resultadoDiagnostico.img;
-            prevencao.textContent = resultadoDiagnostico.prevencao || '';
+            prevencao.textContent = resultadoDiagnostico.prevencao || ''; //Isso é para evitar que apareça "undefined" se prevencao for um atributo vazio
 
             // Limpa o conteúdo anterior das divs
             localImg.innerHTML = '';
             localPrev.innerHTML = '';
 
             // Adiciona a imagem à div 'local-img'
-            localImg.appendChild(imgCaso);
+            localImg.appendChild(imgCaso); //appendChild -> Último filho do elemento pai, que no caso é o localImg 
 
             // Adiciona o parágrafo de prevenção à div 'local-prevencao'
             localPrev.appendChild(prevencao);
