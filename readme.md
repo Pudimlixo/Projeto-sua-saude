@@ -21,7 +21,7 @@ Este repositório contém um sites simples, projetado especificamente para desen
     git clone + https://github.com/Pudimlixo/Projeto-sua-saude.git
     ```
 
-2.  **Navegue até a pasta do projeto desejado:**
+2.  **Navegue até a pasta do arquivo desejado:**
     ```bash
     cd + [nome da pasta do projeto]
     ```
