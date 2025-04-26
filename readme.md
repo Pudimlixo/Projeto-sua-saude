@@ -8,7 +8,7 @@ Este repositório contém um sites simples, projetado especificamente para desen
 
 * **Home (Em Andamento):** ["Página introdutória do site de saúde e com responsividade em andamento."]
 * **Teste de IMC 2 (Em andamento):** ["Página criada para o cálculo do IMC, com o resultado demonstrado ao usuário e tirado da base de dados em json, com imagem criada dinamicamente."]
-* **Sobr nós (Em andamento):** ["Página criada para falar um pouco mais do projeto e do criador dele, além das motiações por trás do projeto"]
+* **Sobre nós (Em andamento):** ["Página criada para falar um pouco mais do projeto e do criador dele, além das motiações por trás do projeto"]
 
 ## Funcionalidades em Desenvolvimento
 
@@ -21,7 +21,7 @@ Este repositório contém um sites simples, projetado especificamente para desen
     git clone + https://github.com/Pudimlixo/Projeto-sua-saude.git
     ```
 
-2.  **Navegue até a pasta do projeto desejado:**
+2.  **Navegue até a pasta do arquivo desejado:**
     ```bash
     cd + [nome da pasta do projeto]
     ```
